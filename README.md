@@ -19,6 +19,7 @@ Este repositório contém o **[Backend da aplicação, desenvolvido em Node.js c
 
 * **Frontend:** React, TypeScript, Styled-Components
 * **Backend:** Node.js, Express.js, PostgreSQL
+* **Gerenciador de Pacotes:** Yarn
 * **Autenticação:** JWT (JSON Web Tokens)
 
 ---
@@ -27,7 +28,9 @@ Este repositório contém o **[Backend da aplicação, desenvolvido em Node.js c
 
 Antes de começar, você vai precisar ter as seguintes ferramentas instaladas em sua máquina:
 * [**Node.js**](https://nodejs.org/en/) (versão 16 ou superior)
+* [**Yarn**](https://classic.yarnpkg.com/en/docs/install/) (gerenciador de pacotes)
 * [**PostgreSQL**](https://www.postgresql.org/download/) (banco de dados)
+* [**pgAdmin**](https://www.pgadmin.org/download/) (ou outro cliente de sua preferência para gerenciar o banco de dados)
 * [**Git**](https://git-scm.com/downloads) (para controle de versão)
 
 ---
@@ -45,15 +48,16 @@ git clone [https://github.com/MarcusGiordani/fasthotel-api.git](https://github.c
 # Navegue até a pasta do projeto
 cd fasthotel-api
 
-# Instale as dependências
-npm install
+# Instale as dependências com Yarn
+yarn install
+
 Configuração do Banco de Dados:
 
 Inicie o serviço do PostgreSQL em sua máquina.
 
-Crie um novo banco de dados chamado fasthotel_db.
+Utilizando o pgAdmin, crie um novo banco de dados chamado fasthotel_db.
 
-Execute os scripts SQL para criar as tabelas do projeto.
+Execute os scripts SQL do projeto para criar as tabelas necessárias.
 
 Variáveis de Ambiente:
 
@@ -72,7 +76,7 @@ Iniciando o Servidor Backend:
 Bash
 
 # Para iniciar o servidor
-npm start
+yarn start
 O servidor backend estará rodando em http://localhost:5000 (ou a porta que você configurou).
 
 ```
@@ -86,8 +90,9 @@ git clone [https://github.com/MarcusGiordani/fasthotel-app.git](https://github.c
 # Navegue até a pasta do projeto
 cd fasthotel-app
 
-# Instale as dependências
-npm install
+# Instale as dependências com Yarn
+yarn install
+
 Variáveis de Ambiente:
 
 Na raiz do projeto frontend (fasthotel-app), crie um arquivo chamado .env.
@@ -100,7 +105,7 @@ Iniciando a Aplicação React:
 Bash
 
 # Para iniciar a aplicação
-npm start
+yarn start
 A aplicação estará disponível em http://localhost:3000.
 
 ```
